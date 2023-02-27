@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "DM Sans", sans-serif;
+  margin: 4rem auto;
+  padding: 2rem 3rem 3rem;
+  max-width: 500px;
+  background: #ff6666;
+  color: #fff;
+  box-shadow: 5px 5px 0 0 rgba(100, 100, 100, 0.1);
+}
+
+.title {
+  font-weight: normal;
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}
+
+.task-list {
+  margin-top: 2.6rem;
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  margin: 0 -3rem 4px;
+  padding: 1.1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease;
+  transform-origin: top left;
+}
+
+.fall {
+  transform: rotate(10deg);
+  opacity: 0;
+}
+
+.task-list .actions {
+  flex-shrink: 0;
+  padding-left: 0.7em;
+}
+
+.task-list .btn-action {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+}
