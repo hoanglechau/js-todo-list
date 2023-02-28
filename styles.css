@@ -61,3 +61,71 @@
   cursor: pointer;
   color: #fff;
 }
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.task-list input[type="checkbox"] {
+  position: relative;
+  top: 0.3rem;
+}
+
+.task-list .label {
+  transition: opacity 0.2s linear;
+}
+
+.task-list .done .label {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.form {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.form input {
+  flex-grow: 1;
+  border: none;
+  background: #f7f1f1;
+  padding: 0 1.5em;
+  font-size: initial;
+}
+
+.form button {
+  padding: 0 1.3rem;
+  background: #ff6666;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+
+.form button:hover {
+  filter: brightness(110%);
+}
+
+.form input,
+.form button {
+  font-family: "Quicksand", sans-serif;
+  height: 3rem;
+}
